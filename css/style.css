@@ -5,7 +5,7 @@
 }
 
 .body{
-    background-image: url("../img/bg.jpg");
+    background-image: url("https://i.pinimg.com/originals/7c/e5/e9/7ce5e9377fa90098b370044ce35a464d.jpg");
     min-height: 100vh;
     background-size: 100vw 100vh;
     object-fit: cover;
@@ -14,26 +14,54 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    color: #fff;
 }
 
+#scoreBox{
+    position: absolute;
+    top: 15px;
+    right: 200px;
+    font-size: 30px;
+    font-family: cursive;
+}
+
+#hiscoreBox{
+    position: absolute;
+    top: 60px;
+    right: 165px;
+    font-size: 30px;
+    font-family: cursive;
+}
+
+
 #board{
-    background: linear-gradient(rgb(170, 236, 170), rgb(236, 236, 167));
+    background: #1d1e38;
+    border-radius: 5px;
     width: 90vmin;
     height: 92vmin;
-    border: 2px solid #000;
+    border: 2px solid #fff;
     display: grid;
     grid-template-rows: repeat(18, 1fr);
     grid-template-columns: repeat(18, 1fr);
+    box-shadow: 0 1rem 3rem 3rem rgba(0, 0, 0, 0.1);
 }
 
 .head{
-    background-color: red;
+    background: linear-gradient(red, yellow);
+    border: 2px solid purple;
+    transform: scale(1.02);
+    border-radius: 9px;
 }
 
 .snake{
     background-color: purple;
+    border: .25vmin solid #fff;
+    border-radius: 12px;
 }
 
 .food{
-    background-color: yellow;
+    background: linear-gradient(red, purple);
+    border: .25vmin solid #000;
+    border-radius: 8px;
+
 }
